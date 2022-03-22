@@ -1,26 +1,31 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <header>
+    <img class="logo" alt="Vue logo" src="./assets/images/bollards-training.png" width="600" height="337.5">
+  </header>
+  <div class="wrapper">
+    <div class="container">
+      <bollard-quiz />
+    </div>
+  </div>
+  <footer>
+    <a href="https://www.twitch.tv/non_creation" target="_blank" noreferrer>
+      <img alt="Suivez moi sur twitch" src="./assets/images/twitch-logo.png" width="75" height="75"/>
+    </a>
+  </footer>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import BollardQuiz from '@/components/BollardQuiz'
 
 export default {
+  title: 'Bollards Training',
   name: 'App',
   components: {
-    HelloWorld
+    BollardQuiz
   }
 }
 </script>
 
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+@import "assets/style/main.scss";
 </style>

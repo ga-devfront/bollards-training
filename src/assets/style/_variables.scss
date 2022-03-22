@@ -1,0 +1,122 @@
+// ----------------
+// Breakpoints values
+// ----------------
+$breakpoints: (
+  tn: 480px,
+  sm: 576px,
+  md: 768px,
+  lg: 1024px,
+  xl: 1330px,
+) !default;
+
+$tiny: map-get($breakpoints, tn) !default;
+$small: map-get($breakpoints, sm) !default;
+$medium: map-get($breakpoints, md) !default;
+$large: map-get($breakpoints, lg) !default;
+$extra-large: map-get($breakpoints, xl) !default;
+
+// ----------
+// Fonts zone
+// ----------
+
+// Font families
+$font-family-base      : Lato !default; // system font stack
+$font-family-headings  : Lato !default; // font for h1, h2.. h6
+$font-family-monospace : consolas, courier, monospace !default; // font for code and samples
+$font-family-basic: BlinkMacSystemFont,-apple-system,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif; //bulma.io
+$line-height-base: 1.5;
+
+// Font sizes
+$font-size-html: 1rem;
+$font-size-base: 1rem;
+
+// Font weights
+$weight-light   : 200 !default;
+$weight-book    : 300 !default;
+$weight-regular : 400 !default;
+$weight-medium  : 500 !default;
+$weight-bold    : 600 !default;
+
+// Border radius
+$radius-none: 0;
+$radius-xs: 0.2rem;
+$radius-small: 0.5rem;
+$radius-medium: 1rem;
+$radius-large: 2rem;
+$radius-circle: 50%;
+
+// For reset
+$link-decoration: none;
+$link-decoration-hover: none;
+
+// ----------------
+// Spacers values
+// ----------------
+
+$spacers: (
+        "0": 0,
+        "1": 0.5rem,
+  // tiny
+        "2": 0.75rem,
+  // tiny-plus
+        "3": 1rem,
+  // small
+        "4": 1.5rem,
+  // small-plus
+        "5": 2rem,
+  // medium
+        "6": 3rem,
+  // medium-plus
+        "7": 5rem,
+  // large
+        "auto": auto,
+) !default;
+$spacer-none: map-get($spacers, "0") !default;
+$spacer-tiny: map-get($spacers, "1") !default;
+$spacer-tiny-plus: map-get($spacers, "2") !default;
+$spacer-small: map-get($spacers, "3") !default;
+$spacer-small-plus: map-get($spacers, "4") !default;
+$spacer-medium: map-get($spacers, "5") !default;
+$spacer-medium-plus: map-get($spacers, "6") !default;
+$spacer-large: map-get($spacers, "7") !default;
+
+// ----------
+// Color zone
+// ----------
+$color-white: #FFFFFF;
+$color-dark: #111111;
+$color-primary: #FEED00;
+$color-primary-lighten: lighten($color-primary, 20%);
+$color-primary-dark: darken($color-primary, 20%);
+$color-primary-darken: darken($color-primary, 10%);
+$color-secondary: #6CBCCC;
+$color-secondary-dark: darken($color-secondary, 30%);
+$color-secondary-darken: darken($color-secondary, 20%);
+
+$color-danger: #F64E60;
+$color-success: #1BC5BD;
+
+$color-grey: #808080;
+$color-grey-lighten: lighten($color-grey, 20%);
+$color-grey-darken: darken($color-grey, 20%);
+
+// for reset
+$body-background-color: $color-secondary;
+$link-color: $color-secondary-dark;
+$link-color-hover: $color-secondary-darken;
+
+// ----------
+// Shadow zone
+// ----------
+$shadow-color: rgba(51, 60, 86, 0.25);
+
+$shadow-mini: 0px 2px 3px 0px $shadow-color;
+$shadow-regular: 0px 5px 5px 0px $shadow-color;
+$shadow-regular-right: 5px 0px 5px 0px $shadow-color;
+$shadow-hover-right: 1rem 0px 1rem 0px $shadow-color;
+$shadow-hover: 0 1rem 1rem $shadow-color;
+
+// ----------
+// Transitions
+// ----------
+$transition-regular: .3s ease-out;

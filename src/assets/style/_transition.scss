@@ -1,0 +1,38 @@
+.switch-enter-active {
+  filter: blur(100);
+  transition: filter $transition-regular;
+}
+
+.switch-leave-active {
+  transition: filter $transition-regular;
+}
+
+.switch-enter,
+.switch-leave-to {
+  filter: blur(100px);
+}
+
+.switch-leave,
+.switch-enter-to {
+  filter: blur(0);
+}
+
+.vanish-bottom-enter-active, {
+  transform: rotateX(90deg);
+  transition: transform $transition-regular;
+  transform-origin: top;
+}
+
+.vanish-bottom-leave-active {
+  transform: rotateX(0deg);
+  transition: transform $transition-regular;
+  transform-origin: bottom;
+}
+
+.vanish-bottom-enter, .vanish-bottom-leave-to {
+  transform: rotateX(90deg);
+}
+
+.vanish-bottom-enter-to, .vanish-bottom-leave  {
+  transform: rotateX(0deg);
+}

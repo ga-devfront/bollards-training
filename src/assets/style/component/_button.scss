@@ -1,0 +1,78 @@
+.button {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: $radius-large;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  background: $color-primary;
+  color: $color-dark;
+  outline: none;
+  transition: background $transition-regular, box-shadow $transition-regular, transform $transition-regular;
+  box-shadow: $shadow-mini;
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: $shadow-regular;
+  }
+
+  .button-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .append-icon, .prepend-icon {
+    width: 20px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: $weight-bold;
+    &:before {
+      aspect-ratio: 1/1;
+      line-height: 1em;
+    }
+  }
+
+  .append-icon {
+    padding-left: .35rem;
+  }
+
+  .prepend-icon {
+    padding-right: .35rem;
+  }
+
+  &.icon {
+    padding: .5rem;
+    aspect-ratio: 1 / 1;
+  }
+
+  &.left {
+    display: block;
+    margin-right: auto;
+  }
+
+  &.right {
+    display: block;
+    margin-left: auto;
+  }
+
+  &.small {
+    padding: 0.2rem 0.75rem;
+  }
+
+  &.block {
+    width: 100%;
+  }
+
+  &.disabled {
+    cursor: not-allowed;
+    background: $color-primary-darken;
+    &:hover {
+      box-shadow: $shadow-mini;
+      transform: translateY(0);
+      background: $color-primary-darken;
+    }
+  }
+}
