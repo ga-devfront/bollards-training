@@ -74,11 +74,11 @@ const bollardsList = [
   },
   {
     img: australie,
-    answers: ['Australie','Australia','Österreich',]
+    answers: ['Australie','Australia','Australien',]
   },
   {
     img: autriche,
-    answers: ['autriche','Austria','autriche']
+    answers: ['Autriche','Austria','Österreich']
   },
   {
     img: belgique,
@@ -90,7 +90,7 @@ const bollardsList = [
   },
   {
     img: coree,
-    answers: ['Corée','Korea']
+    answers: ['Corée', 'Corée du sud','Korea']
   },
   {
     img: croatie,
@@ -198,11 +198,11 @@ const bollardsList = [
   },
   {
     img: nouvelleZelande,
-    answers: ['nouvelle zèlande','New Zealand','Neuseeland']
+    answers: ['Nouvelle-Zélande','New Zealand','Neuseeland']
   },
   {
     img: paysBas,
-    answers: ['Pays bas','The Netherlands','Die Niederlande']
+    answers: ['Pays-Bas','The Netherlands','Die Niederlande']
   },
   {
     img: perou,
@@ -274,7 +274,7 @@ const bollardsList = [
   },
   {
     img: philippine,
-    answers: ['Philippine','filipina','Philippinen']
+    answers: ['Philippines','filipina','Philippinen']
   },
   {
     img: thailande,
