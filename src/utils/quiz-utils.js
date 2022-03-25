@@ -7,6 +7,7 @@ const normalizeString = (string) => {
   if (typeof string !== 'string') {
     return ''
   }
-  return string.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase()
+  const stringWithoutAccent = string.normalize('NFD').replace(/[\u0300-\u036f]/g, '')
+  return stringWithoutAccent.replace('-', ' ').toLowerCase()
 }
 export { normalizeString }
