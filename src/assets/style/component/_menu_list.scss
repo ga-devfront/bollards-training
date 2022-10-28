@@ -1,0 +1,26 @@
+.menu-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin: 0 auto;
+  max-width: 500px;
+  width: 100%;
+  > .button {
+    max-width: calc(50% - 1rem);
+    min-width: fit-content;
+    aspect-ratio: 1/1;
+    font-size: 2rem;
+    @include respond-to('extra-small') {
+      font-size: 1.3rem;
+    }
+    .button-content {
+      flex-direction: column;
+    }
+    .prepend-icon {
+      display: block;
+      width: 2rem;
+      padding: 0;
+    }
+  }
+}

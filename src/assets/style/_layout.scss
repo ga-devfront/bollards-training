@@ -1,0 +1,48 @@
+html, body, #app {
+  margin: 0;
+  width: 100%;
+  min-height: 100%;
+  font-family: $font-family-base;
+  color: $color-dark;
+}
+
+#app {
+  min-height: 100vh;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.container {
+  width: 100%;
+  padding: 10px;
+  margin-right: auto;
+  margin-left: auto;
+
+  @include respond-to("small-up") {
+    max-width: $small;
+    padding: 20px;
+  }
+  @include respond-to("medium-up") {
+    max-width: $medium;
+  }
+  @include respond-to("large-up") {
+    max-width: $large;
+  }
+  @include respond-to("extra-large-up") {
+    max-width: $extra-large;
+  }
+}
+
+h1 {
+  text-align: center;
+}
+
+footer {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

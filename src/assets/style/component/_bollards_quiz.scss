@@ -1,0 +1,103 @@
+.bollards-quiz {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  gap: 20px;
+  .bollards-quiz-end {
+    text-align: center;
+    font-size: 2rem;
+    .bollards-quiz-score {
+      margin-bottom: 2rem;
+      .score {
+        font-weight: bold;
+      }
+    }
+
+  }
+  .bollards-quiz-start {
+    .button {
+      font-size: 2rem;
+      padding: 1rem 2rem;
+      border-radius: 4rem;
+    }
+  }
+  .bollards-quiz-aside {
+    background-color: $color-primary;
+    padding: .2rem 1rem;
+    margin-bottom: -20px;
+    border-radius: 2rem 2rem 0 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+    max-width: 300px;
+    width: 100%;
+    left: .5rem;
+    top: 30%;
+    z-index: 2;
+    .bollards-quiz-timer {
+      text-align: center;
+      .timer-time {
+        line-height: 2rem;
+        font-size: 2rem;
+      }
+    }
+  }
+  .bollards-quiz-image-container {
+    border-radius: $radius-small;
+    aspect-ratio: 1/1;
+    width: 300px;
+    box-shadow: $shadow-regular;
+    overflow: hidden;
+    position: relative;
+    border: 3px solid rgba(0, 0, 0, 0);
+    transition: border-color $transition-regular;
+    &.error {
+      border-color: $color-danger;
+    }
+    &.success {
+      border-color: $color-success;
+    }
+    >img {
+      aspect-ratio: inherit;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .bollards-quiz-answer-container {
+    .bollards-quiz-answer {
+      text-align: center;
+      .bollards-quiz-spoil {
+        line-height: 36px;
+      }
+      input {
+        width: 300px;
+        max-width: 100%;
+        text-align: center;
+        outline: none;
+        background-color: $color-white;
+        border: 2px solid $color-secondary-darken;
+        padding: 5px;
+        border-radius: $radius-small;
+        transition: border-color $transition-regular;
+        &:focus:not(.error) {
+          border-color: $color-secondary-dark;
+        }
+        &.error {
+          border-color: $color-danger;
+          animation: shake .3s;
+        }
+        &.success {
+          border-color: $color-success;
+        }
+      }
+    }
+  }
+  .bollards-quiz-button-container {
+    width: 300px;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+  }
+}
